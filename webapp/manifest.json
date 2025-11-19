@@ -67,7 +67,9 @@
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
                     "bundleName": "sap.training.exc.i18n.i18n",
-                    "supportedLocales": [""],
+                    "supportedLocales": [
+                        ""
+                    ],
                     "fallbackLocale": ""
                 }
             },
@@ -92,14 +94,30 @@
         "routing": {
             "config": {
                 "routerClass": "sap.m.routing.Router",
+                "path": "sap.training.exc.view",
+                "type": "View",
                 "viewType": "XML",
                 "async": true,
-                "viewPath": "sap.training.exc.view",
-                "controlAggregation": "pages",
-                "controlId": "<...>"
+                "controlId": "app",
+                "controlAggregation": "pages"
             },
-            "routes": [],
-            "targets": {}
+            "routes": [
+                {
+                    "name": "overview",
+                    "pattern": "",
+                    "target": [
+                        "overview"
+                    ]
+                }
+            ],
+            "targets": {
+                "overview": {
+                    "id": "overview",
+                    "type": "View",
+                    "name": "Overview",
+                    "level": 1
+                }
+            }
         },
         "rootView": {
             "viewName": "sap.training.exc.view.App",
