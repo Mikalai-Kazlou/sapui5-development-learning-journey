@@ -115,7 +115,7 @@
                     ]
                 },
                 {
-                    "pattern": "detail",
+                    "pattern": "detail/{customerId}",
                     "name": "detail",
                     "target": [
                         "detail"
