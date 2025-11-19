@@ -103,10 +103,17 @@
             },
             "routes": [
                 {
-                    "name": "overview",
                     "pattern": "",
+                    "name": "overview",
                     "target": [
                         "overview"
+                    ]
+                },
+                {
+                    "pattern": "detail",
+                    "name": "detail",
+                    "target": [
+                        "detail"
                     ]
                 }
             ],
@@ -116,6 +123,12 @@
                     "type": "View",
                     "name": "Overview",
                     "level": 1
+                },
+                "detail": {
+                    "id": "detail",
+                    "type": "View",
+                    "name": "Detail",
+                    "level": 2
                 }
             }
         },
