@@ -99,7 +99,12 @@
                 "viewType": "XML",
                 "async": true,
                 "controlId": "app",
-                "controlAggregation": "pages"
+                "controlAggregation": "pages",
+                "bypassed": {
+                    "target": [
+                        "notFound"
+                    ]
+                }
             },
             "routes": [
                 {
@@ -129,6 +134,11 @@
                     "type": "View",
                     "name": "Detail",
                     "level": 2
+                },
+                "notFound": {
+                    "id": "notFound",
+                    "name": "NotFound",
+                    "transition": "show"
                 }
             }
         },
